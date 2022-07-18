@@ -2,6 +2,7 @@
 
 
 body, html, main{
+/*    height: 100%;*/
     color: rgb(255, 255, 255, 1.0);
     margin: 0;
     padding: 0;
@@ -56,6 +57,13 @@ main {
      color: rgb(255, 255, 255);
 }
 
+.nav-link:focus {
+    color: rgba(251, 194, 79, 1);
+} 
+
+.nav-link:hover {
+    color: rgba(251, 194, 79, 1);
+}
 
 .navbar-toggler-icon {
     color: rgb(0, 0, 0);
@@ -80,6 +88,9 @@ main {
     display: flex;
     flex-direction: column;
     align-items: center;
+    animation-name: opacity__efx; 
+    animation-duration: 2s;
+
 }
 
 .hero__text p {
@@ -95,6 +106,18 @@ button {
     font-family: 'Ubuntu', sans-serif;
 }
 
+#btn__hover:hover {
+    background-color: rgba(251, 194, 79, 1);
+    color: rgb(60, 62, 61);   
+}
+
+#btn__hover {
+    color: rgb(255, 255, 255);
+}
+
+.btn-primary {
+
+}
 
 h1 {
     text-align: center;
@@ -104,11 +127,16 @@ h1 {
 
 .card {
     box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2);
+    transition: 0.3s;
     border-radius: 5px;
     background-color: rgb(60, 62, 61);
     padding: 3%;
     margin: 3% 0;
     width: 100%;
+    background: linear-gradient(216deg, rgba(50,52,51,0.8799894957983193) 0%, rgba(60,62,61,1) 48%);
+    animation-name: moving__box; 
+    animation-duration: 1.5s;
+    
 }
 
 .card img {
@@ -143,6 +171,7 @@ h1 {
     flex-direction: column;
     width: 100%;
     align-items: center;
+
 }
 
 .card__artist--header {
@@ -172,6 +201,9 @@ margin: 0;
     border-radius: 5px;
     background-color: rgb(60, 62, 61);
     box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2);
+    background: linear-gradient(216deg, rgba(50,52,51,0.8799894957983193) 0%, rgba(60,62,61,1) 48%);
+    animation-name: opacity__efx;
+    animation-duration: 2s;
 }
 
 .card__artist--style article {
@@ -201,6 +233,8 @@ margin: 0;
     margin-bottom: 2%;
     border-radius: 5px;
     box-shadow: 0 4px 8px 0 rgb(0 0 0 / 25%);
+    animation-name: moving__box--b; 
+    animation-duration: 1s;
 }
 
 .card__recursos {
@@ -240,12 +274,14 @@ margin: 0;
     background-color: rgba(251, 194, 79, 1);
     width: 100%;
     color: rgb(0, 0, 0);
+    /*border-radius: 5px 5px 0 0;*/
 }
 
 .header__recursos h3 {
     padding: 2%;
     margin: 0;
 }
+
 
 .header__recursos h5 {
     padding: 2%;
@@ -314,6 +350,11 @@ main h1 {
     margin-top: 2%;
 }
 
+.form__style button:hover {
+    background-color: rgba(251, 194, 79, 1);
+    color: rgb(60, 62, 61);
+}
+
 .map {
     display: flex;
     justify-content: center;
@@ -362,6 +403,11 @@ main h1 {
     text-align: center;
     padding: 0 3%;
 
+}
+
+.flex__nowrap article {
+    animation-name: opacity__efx; 
+    animation-duration: 2s;
 }
 
 /*===============FOOTER CSS==============*/
@@ -434,6 +480,22 @@ footer ul li {
     margin-top: 2%;
 }
 
+/*===============KEYFRAMES CSS==============*/
+
+@keyframes opacity__efx {
+    from {opacity: 0;} 
+    to {opacity:  1;}   
+}
+
+@keyframes moving__box {
+    from {transform: translateX(-100%);}
+    to {transform: translatex(0);}
+}
+
+@keyframes moving__box--b {
+    from {transform: translateX(100%);}
+    to {transform: translateX(0);}
+}
 
 /*===============BREAKPOINTS CSS==============*/
 
@@ -451,6 +513,8 @@ footer ul li {
 }
 
 @media screen and (min-width: 576px) {
+
+
 
 
 .contact__info--style h3{
@@ -591,6 +655,10 @@ footer ul li a {
 
 @media screen and (min-width: 1200px) {
 
+.card:hover {
+  box-shadow: 0 8px 16px 0 rgba(0,0,0,0.3);
+  transform: translateY(-2%);
+}
 
 .card {
     flex-direction: row;
@@ -637,6 +705,17 @@ main h1 {
     margin: 2%;
 }
 
+.display__recursos:hover {
+    transform: translateY(-2%);
+    transition-duration: 1s;
+    box-shadow: 0 4px 8px 0 rgba(251, 194, 79, 1);
+}
+
+.card__artist--style:hover {
+    transform: translateY(-4%);
+    transition-duration: 1s;
+    box-shadow: 0 4px 8px 0 rgb(0 0 0 / 100%);
+}
 
 }
 
