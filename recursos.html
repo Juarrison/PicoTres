@@ -5,14 +5,19 @@
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <title>Pico Tres Estudio</title>
   <link rel="icon" type="image/x-icon" href="images/logo.svg">
-   <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+  <!-- CSS BS -->
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+  <!-- CSS BS -->
+  <!-- CSS LOCAL -->
   <link rel="stylesheet" href="style/style.css">
+  <!-- CSS LOCAL -->
 </head>
+<!-- INICIO BODY -->
 <body class="bg-dark">
-<!-- inicio de la nav -->
+<!-- INICIO DE NAV-->
 <nav class="navbar navbar-expand-lg navbar-dark bg-dark navbar__img sticky-top">
   <div class="container-fluid">
-    <div class="flex__logo">
+    <div class="d-flex align-items-center flex__logo">
       <a class="navbar-brand" href="index.html">
         <img src="images/logo.svg" alt="logo de pico tres estudio">   
       </a>
@@ -51,10 +56,10 @@
     </div>
   </div>
 </nav>
-<!-- fin de la nav -->
+<!-- FIN DE NAV -->
 <main>
   <h1>RECURSOS</h1>  
-    <section class="recursos__flex">
+    <section class="d-flex justify-content-center flex-wrap">
         <article class="display__recursos">
             <div class="header__recursos">
               <h3>
@@ -68,7 +73,7 @@
             </div>
           <div class="card__recursos">
               <div class="img__recursos">
-                <img src="images/recursos/founder_pack.jpg" alt="">
+                <img src="images/recursos/founder_pack.jpg" alt="portada del sample pack founderpack">
               </div>
               <div class="description__recursos">
                 <p>SUBTITULO</p>
@@ -90,7 +95,7 @@
             </div>
           <div class="card__recursos">
               <div class="img__recursos">
-                <img src="images/recursos/infinity_pack.jpg" alt="">
+                <img src="images/recursos/infinity_pack.jpg" alt="portada del sample pack infinitypack">
               </div>
               <div class="description__recursos">
                 <p>SUBTITULO</p>
@@ -112,7 +117,7 @@
             </div>
           <div class="card__recursos">
               <div class="img__recursos">
-                <img src="images/recursos/infinity_pack_a.jpg" alt="">
+                <img src="images/recursos/infinity_pack_a.jpg" alt="portada del sample pack infinity pack guitar collection">
               </div>
               <div class="description__recursos">
                 <p>SUBTITULO</p>
@@ -134,7 +139,7 @@
             </div>
           <div class="card__recursos">
               <div class="img__recursos">
-                <img src="images/recursos/oracle_pack.jpg" alt="">
+                <img src="images/recursos/oracle_pack.jpg" alt="portada de sample pack oracle midi collection">
               </div>
               <div class="description__recursos">
                 <p>SUBTITULO</p>
@@ -156,7 +161,7 @@
             </div>
           <div class="card__recursos">
               <div class="img__recursos">
-                <img src="images/recursos/oracle_pack_a.jpg" alt="">
+                <img src="images/recursos/oracle_pack_a.jpg" alt="portada de sample pack oracle">
               </div>
               <div class="description__recursos">
                 <p>SUBTITULO</p>
@@ -178,7 +183,7 @@
             </div>
           <div class="card__recursos">
               <div class="img__recursos">
-                <img src="images/recursos/samplepack.jpg" alt="">
+                <img src="images/recursos/samplepack.jpg" alt="portada de sample pack oracle infinity bonus acapellas">
               </div>
               <div class="description__recursos">
                 <p>SUBTITULO</p>
@@ -188,9 +193,49 @@
           </div>
         </article>  
     </section>
+  <!-- INICIO DE CAROUSEL -->      
+    <h1>TUTORIALES</h1>
+      <div id="carouselExampleControls" class="carousel slide" data-bs-ride="carousel slide__flex">
+        <div class="carousel-inner">
+          <div class="carousel-item active">
+            <a href="https://www.youtube.com/" target="_blank">
+            <img src="images/recursos/tutoriales/tutorial.jpg" class="d-block w-100" alt="escritorio con una computadora, sintetizadores y controladores midi">
+            </a>
+          </div>
+          <div class="carousel-item">
+            <a href="https://www.youtube.com/" target="_blank">
+              <img src="images/recursos/tutoriales/tutorial_a.jpg" class="d-block w-100" alt="interfaz de ableton live 11">
+            </a>
+          </div>
+          <div class="carousel-item">
+            <a href="https://www.youtube.com/" target="_blank">
+              <img src="images/recursos/tutoriales/tutorial_b.jpg" class="d-block w-100" alt="interfaz de ableton live en su vista arrangement">
+            </a>
+          </div>
+          <div class="carousel-item">
+            <a href="https://www.youtube.com/" target="_blank">
+              <img src="images/recursos/tutoriales/tutorial_c.jpg" class="d-block w-100" alt="persona con auriculares sentada frente a una consola de mezcla analógica">
+            </a>
+          </div>
+          <div class="carousel-item">
+            <a href="https://www.youtube.com/" target="_blank">
+            <img src="images/recursos/tutoriales/curso_pdf.jpg" class="d-block w-100" alt="portada de un curso de producción musical">
+            </a>
+          </div>
+        </div>
+          <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleControls" data-bs-slide="prev">
+            <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+            <span class="visually-hidden">Previous</span>
+          </button>
+          <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleControls" data-bs-slide="next">
+            <span class="carousel-control-next-icon" aria-hidden="true"></span>
+            <span class="visually-hidden">Next</span>
+          </button>
+      </div>
+  <!-- FINAL DE CAROUSEL -->    
 </main>
 <!-- INICIO DE FOOTER -->
-<footer class="bg-dark footer__flex">
+<footer class="d-flex flex-column bg-dark">
       <div class="contact__info--style">
         <h3>
           Información de contacto
@@ -209,16 +254,16 @@
       </div>
       <div class="socialmedia__link">
         <a href="https://www.instagram.com/picotresestudio/" target="_blank">
-            <img src="images/footer/instagram.svg" alt="">
+            <img src="images/footer/instagram.svg" alt="logo de instagram">
         </a>
         <a href="https://soundcloud.com/es" target="_blank">
-            <img src="images/footer/soundcloud.svg" alt="">
+            <img src="images/footer/soundcloud.svg" alt="logo de soundcloud">
         </a>
          <a href="https://open.spotify.com/" target="_blank">
-            <img src="images/footer/spotify.svg" alt="">
+            <img src="images/footer/spotify.svg" alt="logo de spotify">
         </a>
          <a href="https://twitter.com" target="_blank">
-            <img src="images/footer/twitter.svg" alt="">
+            <img src="images/footer/twitter.svg" alt="logo de twitter">
         </a>
       </div>
       <ul class="legal__flex">
@@ -242,8 +287,12 @@
 <!-- FINAL DE FOOTER -->
 
 
- <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous">
- </script>
+<!-- BS SCRIPT -->
+<script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.5/dist/umd/popper.min.js" integrity="sha384-Xe+8cL9oJa6tN/veChSP7q+mnSPaj5Bcu9mPX5F5xIGE0DVittaqT5lorf0EI7Vk" crossorigin="anonymous"></script>
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/js/bootstrap.min.js" integrity="sha384-kjU+l4N0Yf4ZOJErLsIcvOU2qSb74wXpOhqTvwVx3OElZRweTnQ6d31fXEoRD1Jy" crossorigin="anonymous"></script>
+<!-- BS SCRIPT -->
 
+
+<!-- FIN DE BODY -->
 </body>
 </html>

@@ -5,14 +5,19 @@
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <title>Pico Tres Estudio</title>
   <link rel="icon" type="image/x-icon" href="images/logo.svg">
-   <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+  <!-- BS CSS -->
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+  <!-- BS CSS -->
+  <!-- CSS LOCAL -->
   <link rel="stylesheet" href="style/style.css">
+  <!-- CSS LOCAL -->
 </head>
+<!-- INICIO DE BODY -->
 <body class="bg__color">
-<!-- inicio de la nav -->
+<!--INICIO DE NAV-->
 <nav class="navbar navbar-expand-lg navbar-dark bg-dark navbar__img sticky-top">
   <div class="container-fluid">
-    <div class="flex__logo">
+    <div class="d-flex align-items-center flex__logo">
       <a class="navbar-brand" href="index.html">
         <img src="images/logo.svg" alt="logo de pico tres estudio">   
       </a>
@@ -23,9 +28,9 @@
       </h3>
   </div>
     <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
-    <span class="navbar-toggler-icon"></span>
+      <span class="navbar-toggler-icon"></span>
     </button>
-    <div class="collapse navbar-collapse" id="navbarSupportedContent">
+  <div class="collapse navbar-collapse" id="navbarSupportedContent">
       <ul class="navbar-nav ms-auto mb-2 mb-lg-0">
         <li class="nav-item">
           <a class="nav-link" aria-current="page" href="servicios.html">SERVICIOS</a>
@@ -37,57 +42,57 @@
           <a class="nav-link" href="contacto.html">CONTACTO</a>
         </li>
         <li class="nav-item dropdown">
-          <a class="nav-link dropdown-toggle" href="recursos.html" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+            <a class="nav-link dropdown-toggle" href="recursos.html" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
           RECURSOS
-          </a>
-        <div class="dropdown-menu" aria-labelledby="navbarDropdown">
-          <a class="dropdown-item" href="#">Action</a>
+            </a>
+          <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+            <a class="dropdown-item" href="#">Action</a>
           <a class="dropdown-item" href="#">Another action</a>
-        <div class="dropdown-divider"></div>
-          <a class="dropdown-item" href="#">Something else here</a>
-        </div>
-      </li>
+          <div class="dropdown-divider"></div>
+            <a class="dropdown-item" href="#">Something else here</a>
+          </div>
+        </li>
       </ul>
     </div>
   </div>
 </nav>
-<!-- fin de la nav -->
-<!-- inicio de main -->
+<!-- FIN DE NAV -->
+<!-- INICIO DE MAIN -->
 <main class="container bg-dark ">
 <h1>SERVICIOS</h1>
     <div class="card col-12 col-lg-6">
         <img src="images/servicios/produccion.jpg" alt="persona trabajando en un estudio musical">
       <div class="text__card">
         <h4>PRODUCCIÓN</h4>
-        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Aliquam, laborum, quasi, labore fugiat impedit eius, magnam iste hic cum tenetur assumenda nisi quisquam quis perferendis eligendi. Obcaecati voluptatum perspiciatis porro!</p>
+          <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Aliquam, laborum, quasi, labore fugiat impedit eius, magnam iste hic cum tenetur assumenda nisi quisquam quis perferendis eligendi. Obcaecati voluptatum perspiciatis porro!</p>
       </div>
     </div>
     <div class="card col-12 col-lg-6 card__row--reverse ">
-        <img src="images/servicios/grabacion.jpg" alt="persona trabajando en un estudio musical">
+        <img src="images/servicios/grabacion.jpg" alt="pequeño estudio musical con un microfono en primer plano">
       <div class="text__card">
         <h4>GRABACIÓN</h4>
         <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Aliquam, laborum, quasi, labore fugiat impedit eius, magnam iste hic cum tenetur assumenda nisi quisquam quis perferendis eligendi. Obcaecati voluptatum perspiciatis porro!</p>
       </div>
     </div>
     <div class="card col-12 col-lg-6">
-        <img src="images/servicios/mezcla.jpg" alt="persona trabajando en un estudio musical">
+        <img src="images/servicios/mezcla.jpg" alt="consola de mezcla analógica">
       <div class="text__card">
         <h4>MEZCLA</h4>
         <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Aliquam, laborum, quasi, labore fugiat impedit eius, magnam iste hic cum tenetur assumenda nisi quisquam quis perferendis eligendi. Obcaecati voluptatum perspiciatis porro!</p>
       </div>
-    </div>
-    <div class="card col-12 col-lg-6 card__row--reverse ">
-        <img src="images/servicios/mastering.jpg" alt="persona trabajando en un estudio musical">
+      </div>
+      <div class="card col-12 col-lg-6 card__row--reverse ">
+        <img src="images/servicios/mastering.jpg" alt="compresor analógico en primer plano">
       <div class="text__card">
         <h4>MASTERING</h4>
         <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Aliquam, laborum, quasi, labore fugiat impedit eius, magnam iste hic cum tenetur assumenda nisi quisquam quis perferendis eligendi. Obcaecati voluptatum perspiciatis porro!</p>
       </div>
     </div>
 </main>
-<!-- final de main -->
+<!-- FINAL DE MAIN-->
 
 <!-- INICIO DE FOOTER -->
-<footer class="bg-dark footer__flex">
+<footer class="d-flex flex-column bg-dark">
       <div class="contact__info--style">
         <h3>
           Información de contacto
@@ -106,16 +111,16 @@
       </div>
       <div class="socialmedia__link">
         <a href="https://www.instagram.com/picotresestudio/" target="_blank">
-          <img src="images/footer/instagram.svg" alt="">
+          <img src="images/footer/instagram.svg" alt="logo de instagram">
         </a>
         <a href="https://soundcloud.com/es" target="_blank">
-          <img src="images/footer/soundcloud.svg" alt="">
+          <img src="images/footer/soundcloud.svg" alt="logo de soundcloud">
         </a>
          <a href="https://open.spotify.com/" target="_blank">
-          <img src="images/footer/spotify.svg" alt="">
+          <img src="images/footer/spotify.svg" alt="logo de spotify">
         </a>
          <a href="https://twitter.com" target="_blank">
-          <img src="images/footer/twitter.svg" alt="">
+          <img src="images/footer/twitter.svg" alt="logo de twitter">
         </a>
       </div>
       <ul class="legal__flex">
@@ -139,8 +144,10 @@
 <!-- FINAL DE FOOTER -->
 
 
- <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous">
- </script>
+<!-- BS SCRIPT -->
+<script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.5/dist/umd/popper.min.js" integrity="sha384-Xe+8cL9oJa6tN/veChSP7q+mnSPaj5Bcu9mPX5F5xIGE0DVittaqT5lorf0EI7Vk" crossorigin="anonymous"></script>
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/js/bootstrap.min.js" integrity="sha384-kjU+l4N0Yf4ZOJErLsIcvOU2qSb74wXpOhqTvwVx3OElZRweTnQ6d31fXEoRD1Jy" crossorigin="anonymous"></script>
+<!-- BS SCRIPT -->
 
 </body>
 </html>

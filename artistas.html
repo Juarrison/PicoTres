@@ -5,14 +5,19 @@
 	<meta name="viewport" content="width=device-width, initial-scale=1">
 	<title>Pico Tres Estudio</title>
   <link rel="icon" type="image/x-icon" href="images/logo.svg">
-	 <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+	<!-- BS CSS -->
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+  <!-- BS CSS -->
+  <!-- CSS LOCAL -->
 	<link rel="stylesheet" href="style/style.css">
+  <!-- CSS LOCAL -->
 </head>
+<!-- INICIO DE BODY -->
 <body class="bg__color" >
-<!-- inicio de la nav -->
+<!-- INICIO DE NAV -->
 <nav class="navbar navbar-expand-lg navbar-dark bg-dark navbar__img sticky-top">
   <div class="container-fluid">
-    	<div class="flex__logo">
+    	<div class="d-flex align-items-center flex__logo">
       	<a class="navbar-brand" href="index.html">
       		<img src="images/logo.svg" alt="logo de pico tres estudio">		
   		  </a>
@@ -51,11 +56,11 @@
     </div>
   </div>
 </nav>
-<!-- fin de la nav -->
+<!-- FIN DE NAV -->
 <main class="bg-dark">
 <h1>ARTISTAS</h1>
 <!--   SECCION PRESENTACIONES -->
-  <section class="presentation__artist">
+  <section class="d-flex justify-content-center flex-column presentation__artist">
       <div class="card__artist--header">
         <h3>PRESENTACIONES</h3>
           <p>
@@ -67,11 +72,11 @@
       <div class="card__artist--style">
         <div class="card__top">
           <a href="#">
-            Nombre de artisa
+            Nombre de artista
           </a>
           <p>16/06 22:00hs</p>    
         </div>
-        <img src="images/artistas/artista.jpg" alt="foto de un musico">
+        <img src="images/artistas/artista.jpg" alt="foto de una musica tocando en vivo">
         <article>
           Lorem ipsum dolor sit amet consectetur adipisicing elit. A tempore quaerat dignissimos, doloremque necessitatibus sequi ipsa esse assumenda exercitationem illum.
         </article>
@@ -79,11 +84,11 @@
       <div class="card__artist--style">
         <div class="card__top">
           <a href="#">
-            Nombre de artisa
+            Nombre de artista
           </a>
           <p>16/06 22:00hs</p>    
         </div>
-        <img src="images/artistas/artistb.jpg" alt="foto de un musico">
+        <img src="images/artistas/artistb.jpg" alt="foto de una mujer interpretando musica en un live set">
         <article>
           Lorem ipsum dolor sit amet consectetur adipisicing elit. A tempore quaerat dignissimos, doloremque necessitatibus sequi ipsa esse assumenda exercitationem illum.
         </article>
@@ -91,11 +96,11 @@
       <div class="card__artist--style">
         <div class="card__top">
           <a href="#">
-            Nombre de artisa
+            Nombre de artista
           </a>
           <p>16/06 22:00hs</p>    
         </div>
-        <img src="images/artistas/artistc.jpg" alt="foto de un musico">
+        <img src="images/artistas/artistc.jpg" alt="foto de un musico interpretando música en vivo">
         <article>
           Lorem ipsum dolor sit amet consectetur adipisicing elit. A tempore quaerat dignissimos, doloremque necessitatibus sequi ipsa esse assumenda exercitationem illum.
         </article>
@@ -112,16 +117,16 @@
             Lorem ipsum dolor sit amet consectetur adipisicing elit. Perspiciatis adipisci aut magnam voluptates, ex labore repellendus, odio totam ducimus nemo.
           </p>
       </div>
-    <!--   TARJETA DE ARTISTAS -->
+    <!--   TARJETA DE LANZAMIENTO -->
   <div class="card__artist--flex"> 
       <div class="card__artist--style">
         <div class="card__top">
           <a href="#">
-            Nombre de artisa
+            LANZAMIENTO
           </a>
           <p>16/06 22:00hs</p>    
         </div>
-        <img src="images/artistas/portada.jpg" alt="foto de un musico">
+        <img src="images/artistas/portada.jpg" alt="tapa de un nuevo lanzamiento">
         <article>
           Lorem ipsum dolor sit amet consectetur adipisicing elit. A tempore quaerat dignissimos, doloremque necessitatibus sequi ipsa esse assumenda exercitationem illum.
         </article>
@@ -129,11 +134,11 @@
       <div class="card__artist--style">
         <div class="card__top">
           <a href="#">
-            Nombre de artisa
+            LANZAMIENTO
           </a>
           <p>16/06 22:00hs</p>    
         </div>
-        <img src="images/artistas/portadab.jpg" alt="foto de un musico">
+        <img src="images/artistas/portadab.jpg" alt="tapa de un disco donde se ve persona en un paisaje desertico">
         <article>
           Lorem ipsum dolor sit amet consectetur adipisicing elit. A tempore quaerat dignissimos, doloremque necessitatibus sequi ipsa esse assumenda exercitationem illum.
         </article>
@@ -141,22 +146,22 @@
       <div class="card__artist--style">
         <div class="card__top">
           <a href="#">
-            Nombre de artisa
+            LANZAMIENTO
           </a>
           <p>16/06 22:00hs</p>    
         </div>
-        <img src="images/artistas/portadac.jpg" alt="foto de un musico">
+        <img src="images/artistas/portadac.jpg" alt="tapa de un disco con un fondo abstracto">
         <article>
           Lorem ipsum dolor sit amet consectetur adipisicing elit. A tempore quaerat dignissimos, doloremque necessitatibus sequi ipsa esse assumenda exercitationem illum.
         </article>
       </div> 
   </div>  
-<!--   TARJETA DE ARTISTAS -->
+<!--   TARJETA DE LANZAMIENTO -->
   </section> 
 <!--   FINAL SECCION LANZAMIENTOS -->
 </main>
 <!-- INICIO DE FOOTER -->
-<footer class="bg-dark footer__flex">
+<footer class="d-flex flex-column bg-dark">
       <div class="contact__info--style">
         <h3>
           Información de contacto
@@ -175,16 +180,16 @@
       </div>
       <div class="socialmedia__link">
         <a href="https://www.instagram.com/picotresestudio/" target="_blank">
-          <img src="images/footer/instagram.svg" alt="">
+          <img src="images/footer/instagram.svg" alt="logo de instagram">
         </a>
         <a href="https://soundcloud.com/es" target="_blank">
-          <img src="images/footer/soundcloud.svg" alt="">
+          <img src="images/footer/soundcloud.svg" alt="logo de soundcloud">
         </a>
          <a href="https://open.spotify.com/" target="_blank">
-          <img src="images/footer/spotify.svg" alt="">
+          <img src="images/footer/spotify.svg" alt="logo de spotify">
         </a>
          <a href="https://twitter.com" target="_blank">
-          <img src="images/footer/twitter.svg" alt="">
+          <img src="images/footer/twitter.svg" alt="logo de twitter">
         </a>
       </div>
       <ul class="legal__flex">
@@ -207,9 +212,11 @@
 </footer>
 <!-- FINAL DE FOOTER -->
 
-
- <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous">
- </script>
+<!-- BS SCRIPT -->
+<script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.5/dist/umd/popper.min.js" integrity="sha384-Xe+8cL9oJa6tN/veChSP7q+mnSPaj5Bcu9mPX5F5xIGE0DVittaqT5lorf0EI7Vk" crossorigin="anonymous"></script>
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/js/bootstrap.min.js" integrity="sha384-kjU+l4N0Yf4ZOJErLsIcvOU2qSb74wXpOhqTvwVx3OElZRweTnQ6d31fXEoRD1Jy" crossorigin="anonymous"></script>
+<!-- BS SCRIPT -->
 
 </body>
+<!-- FINAL DE BODY -->
 </html>

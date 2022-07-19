@@ -21,11 +21,6 @@ main {
     background-color: #212529;
 }
 
-.flex__logo {
-    display: flex;
-    align-items: center;
-}
-
 .flex__logo a {
     max-width: 62px;
     min-width: 45px;
@@ -77,17 +72,10 @@ main {
     background-repeat: no-repeat;
     background-size: cover;
     position: relative;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-
 }
 
 .hero__text {
     font-size: 2em;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
     animation-name: opacity__efx; 
     animation-duration: 2s;
 
@@ -149,22 +137,11 @@ h1 {
     font-size: 1.2;
 }
 
-.row {
-    justify-content: center;
-}
-
 .text__card p {
     font-size: 0.8em;
-    text-align: justify;
 }
 
 /*===============ARTISTAS CSS==============*/
-
-.presentation__artist {
-    display: flex;
-    justify-content: center;
-    flex-direction: column;
-}
 
 .card__artist--flex {
     display: flex;
@@ -274,7 +251,6 @@ margin: 0;
     background-color: rgba(251, 194, 79, 1);
     width: 100%;
     color: rgb(0, 0, 0);
-    /*border-radius: 5px 5px 0 0;*/
 }
 
 .header__recursos h3 {
@@ -295,13 +271,13 @@ margin: 0;
     font-size: 0.9em;
 }
 
-/*===============CONTACTO CSS==============*/
-
-.flex__preguntas {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
+#carouselExampleControls {
+    margin: 0 5%;
+    padding: 0 3%;
 }
+
+
+/*===============CONTACTO CSS==============*/
 
 main h1 {
     padding: 4%;
@@ -318,19 +294,22 @@ main h1 {
 .flex__preguntas h5 {
     padding: 2% 2% 2% 0;
     margin: 0;
-    font-size: 1.1em;
+    font-size: 1em;
+    width: 100%;
 } 
 
 .flex__preguntas article {
     padding: 2%;
     margin: 5%;
-    border-left: solid 3px rgba(251, 194, 79, 1);
-
+    height: 50%;
+    box-shadow: 0 4px 8px 0 rgba(0,0,0,0.8);
 } 
 
 .flex__preguntas p {
-    text-align: justify;
     font-size: 0.8em;
+    border-left: solid 3px rgba(251, 194, 79, 1);
+    padding: 1% 2%;  
+
 }
 
 
@@ -366,7 +345,6 @@ main h1 {
     margin: 3%;
     width: 80%;
     box-shadow: 0 4px 8px 0 rgba(0,0,0,0.5);
-
 
 }
 
@@ -411,12 +389,6 @@ main h1 {
 }
 
 /*===============FOOTER CSS==============*/
-
-.footer__flex {
-    display: flex;
-    flex-direction: column;
-}
-
 .legal__flex {
     display: flex;
     width: 100%;
@@ -620,10 +592,6 @@ footer ul li a {
     padding: 2.5%;
 }
 
-.flex__form {
-    display: flex;
-}
-
 .form__section {
     width: 50%;
 }
@@ -632,23 +600,36 @@ footer ul li a {
     width: 50%;
 }
 
-.flex__form {
-    display: flex;
-}
-
 .form__section h4 {
     margin-left: 2%;
-}
-
-.recursos__flex {
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: center;
 }
 
 .display__recursos {
     width: 45%;
     margin: 1% 1%;
+}
+
+
+.contact__info--style {
+    flex-direction: row;
+}
+
+.contact__info--style h3{
+    padding: 2%;
+    margin: 0;
+    width: 25%;
+}
+
+.contact__info--style ul {
+    display: flex;
+    flex-direction: row;
+    padding: 2%;
+    margin: 0;
+    width: 75%;
+}
+
+.contact__info--style ul li p {
+    font-size: 0.9em;
 }
 
 }
@@ -715,6 +696,38 @@ main h1 {
     transform: translateY(-4%);
     transition-duration: 1s;
     box-shadow: 0 4px 8px 0 rgb(0 0 0 / 100%);
+}
+
+.contact__info--style {
+    display: flex;
+    flex-direction: row;
+}
+
+
+.contact__info--style h3 {
+   font-size: 1.4em; 
+}
+
+
+.contact__info--style ul li p {
+    font-size: 0.9em;
+}
+
+.legal__flex {
+    padding: 1%;
+}
+
+.contact__info--style ul {
+    padding: 1.5%;
+}
+
+.contact__info--style h3 {
+    padding: 1.5%;
+}
+
+
+.socialmedia__link a {
+    width: 3%;
 }
 
 }
