@@ -2,7 +2,6 @@
 
 
 body, html, main{
-/*    height: 100%;*/
     color: rgb(255, 255, 255, 1.0);
     margin: 0;
     padding: 0;
@@ -65,7 +64,6 @@ main {
 }
 
 .hero__image {
- 
     height: 100%;
     background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.8)), url("../images/hero_image.jpg");
     background-position: center;
@@ -81,8 +79,8 @@ main {
 
 }
 
-.hero__text p {
-    text-align: center;
+.hero__text h1 {
+    text-align: left;
 }
 
 .hero__text button {
@@ -134,7 +132,7 @@ h1 {
 .text__card h4 {
     padding-top: 1%;
     font-weight: bold;
-    font-size: 1.2;
+    font-size: 1.2em;
 }
 
 .text__card p {
@@ -209,7 +207,7 @@ margin: 0;
     justify-content: center;
     margin-bottom: 2%;
     border-radius: 5px;
-    box-shadow: 0 4px 8px 0 rgb(0 0 0 / 25%);
+     box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2);
     animation-name: moving__box--b; 
     animation-duration: 1s;
 }
@@ -271,11 +269,15 @@ margin: 0;
     font-size: 0.9em;
 }
 
-#carouselExampleControls {
-    margin: 0 5%;
-    padding: 0 3%;
+.bg__yellow {
+    background-color: rgba(251, 194, 79, 1);
+    color: rgb(0, 0, 0);
+    padding-bottom: 0;
 }
 
+.bg__yellow h5 {
+    font-weight: bold;
+}
 
 /*===============CONTACTO CSS==============*/
 
@@ -452,6 +454,10 @@ footer ul li {
     margin-top: 2%;
 }
 
+.legal__flex a:hover {
+    color: rgb(255, 255, 255);
+}
+
 /*===============KEYFRAMES CSS==============*/
 
 @keyframes opacity__efx {
@@ -485,8 +491,6 @@ footer ul li {
 }
 
 @media screen and (min-width: 576px) {
-
-
 
 
 .contact__info--style h3{
@@ -644,7 +648,6 @@ footer ul li a {
 .card {
     flex-direction: row;
      margin: 2%;
-
 }
 
 .card img {
@@ -731,6 +734,7 @@ main h1 {
 }
 
 }
+
 
 
 
